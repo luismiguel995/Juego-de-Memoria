@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Juego de Memoria</title>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<script src="jquery-3.3.1.js"></script>
+<script src="code.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body
+{
+	margin:0px;
+	padding:0px;
+	cursor: url("cursor.png")2 24, pointer;
+}
+#fondo
+{
+	text-align:center;
+	margin-top:-20px;
+	height:100%;
+	display: block;
+	background-image:url("bg1.gif");
+}
+h2
+{
+	color:#00cccc;
+	font-family: 'VT323', monospace;
+	font-size: 5em;
+	margin: 20 auto;
+	text-shadow: -5px 0 black;
+	padding-top: 5%;
+}
+h3
+{
+	color:black;
+	background-color: white;
+	width: 220px;
+	font-family: 'VT323', monospace;
+	font-size: 0.8em;
+	font-weight: lighter;
+	margin: 20 auto;
+}
+.contenedor
+{
+	padding:12%;
+	display:inline-block;
+	width:200px;
+	height:200px;
+}
+ 
+.figura
+{
+	background:#00cccc;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	margin:3px;
+}
+.figura:hover
+{
+	cursor: url("cursor2.png")2 24, pointer;
+}
+
+.activa
+{
+	background-color:#0000;
+}
+.error
+{
+	background-color:#FF3333;
+}
+.cuadrado
+{
+	max-width: 100px;
+	max-height: 100px;
+}
+ </style>
+</head>
+ 
+<body>
+
+<div id="fondo">	
+		<h2>MEMORY FIRST</h2>
+		<h3>Simplifica hasta llegar a la figura inicial</h3>
+	<div class="contenedor">
+		<div class="juego"></div> 
+	</div>
+</div>
+</body>
+</html>
